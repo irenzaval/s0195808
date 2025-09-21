@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список гиперссылок и форма</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Маркированный список гиперссылок</h1>
-    <h2>Выполнила Завалей Ирина, 22/1 группа</h2>
+    <header id="site-header">
+        <div class="container">
+            <div class="logo-title">
+                <img src="https://via.placeholder.com/50x50?text=Logo" alt="Логотип сайта" class="logo">
+                <h1 class="site-name">Технологии Веб-разработки</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+    <section id="hyperlinks">
+    <h2>Маркированный список гиперссылок</h2>
     
+    <ul class="links-list"></ul>
     <ul>
         <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
         <li><a href="https://kubsu.ru/">Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
@@ -52,67 +76,144 @@
         <p>Это фрагмент, на который ведет одна из ссылок выше.</p>
     </div>
 
+     </section>
+
+        <section id="table-section">
+            <h2>Таблица с данными</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Наименование</th>
+                        <th>Категория</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Монитор 24"</td>
+                        <td>Мониторы</td>
+                        <td>15 999 ₽</td>
+                        <td>12</td>
+                        <td>В наличии</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Клавиатура механическая</td>
+                        <td>Периферия</td>
+                        <td>4 500 ₽</td>
+                        <td>25</td>
+                        <td>В наличии</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Мышь беспроводная</td>
+                        <td rowspan="2">Периферия</td>
+                        <td>2 300 ₽</td>
+                        <td>0</td>
+                        <td>Нет в наличии</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Коврик для мыши</td>
+                        <td>800 ₽</td>
+                        <td>45</td>
+                        <td>В наличии</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Ноутбук игровой</td>
+                        <td>Ноутбуки</td>
+                        <td>89 999 ₽</td>
+                        <td>3</td>
+                        <td>Мало</td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td colspan="2">Комплект: мышь + клавиатура</td>
+                        <td>6 200 ₽</td>
+                        <td>7</td>
+                        <td>В наличии</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="form-section">
+
     <h1>Форма</h1>
     
     <form action="#" method="post">
-        <fieldset>
-            <legend>Личная информация</legend>
-            
-            <label for="fio">ФИО:</label>
-            <input type="text" id="fio" name="fio" required>
-            
-            <div></div>
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" name="phone" required pattern="[0-9]+">
-            
-            <div></div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <div></div>
-            <label for="birthdate">Дата рождения:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Пол</legend>
-            <label>
-                <input type="radio" name="gender" value="male" required> Мужской
-            </label>
-            <label>
-                <input type="radio" name="gender" value="female"> Женский
-            </label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Любимый язык программирования</legend>
-            <select name="languages" multiple size="6" required>
-                <option value="pascal">Pascal</option>
-                <option value="c">C</option>
-                <option value="cpp">C++</option>
-                <option value="javascript">JavaScript</option>
-                <option value="php">PHP</option>
-                <option value="python">Python</option>
-                <option value="java">Java</option>
-                <option value="haskel">Haskel</option>
-                <option value="clojure">Clojure</option>
-                <option value="prolog">Prolog</option>
-                <option value="scala">Scala</option>
-            </select>
-            <p><small>Для множественного выбора используйте Ctrl+клик (Cmd+клик на Mac)</small></p>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Биография</legend>
-            <textarea name="bio" rows="5" cols="50" placeholder="Расскажите о себе..." required></textarea>
-        </fieldset>
-        
-        <label>
-            <input type="checkbox" name="agreement" required> С контрактом ознакомлен(а)
-        </label>
-        
-        <br><br>
-        <button type="submit">Сохранить</button>
-    </form>
+                <fieldset>
+                    <legend>Личная информация</legend>
+                    
+                    <label for="fio" class="required">ФИО:</label>
+                    <input type="text" id="fio" name="fio" required>
+                    <div></div>
+                    
+                    <label for="phone" class="required">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]+">
+                    <div></div>
+                    
+                    <label for="email" class="required">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div></div>
+                    
+                    <label for="birthdate" class="required">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Пол</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Женский
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Любимый язык программирования</legend>
+                    <select name="languages" multiple size="6">
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskel">Haskel</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                    <p class="note">Для множественного выбора используйте Ctrl+клик (Cmd+клик на Mac)</p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Биография</legend>
+                    <textarea name="bio" rows="5" placeholder="Расскажите о себе..."></textarea>
+                </fieldset>
+                
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agreement" required> 
+                    <span class="required">С контрактом ознакомлен(а)</span>
+                </label>
+                
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <div class="container">
+            <p>&copy; Завалей Ирина, 2025</p>
+            <p>КубГУ, Факультет компьютерных технологий и прикладной математики</p>
+        </div>
+    </footer>
 </body>
 </html>
