@@ -22,56 +22,7 @@
             <h1 class="site-title">Технологии Веб-разработки</h1>
         </div>
     </header>
-
-    <main class="main">
-        <div class="container">
-            <section class="section">
-                <h2>Маркированный список гиперссылок</h2>
-                <ul class="links-list">
-                    <li><a href="http://kubsu.ru">Абсолютная ссылка на kubsu.ru</a></li>
-                    <li><a href="https://kubsu.ru">Абсолютная ссылка на kubsu.ru (https)</a></li>
-                    <li><a href="https://kubsu.ru"><img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png" width="200" height="200" alt="Ссылка-изображение"></a></li>
-                    <li><a href="/internal-page">Сокращенная ссылка на внутреннюю страницу</a></li>
-                    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-                    <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-                    <li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
-                    <li><a href="/page?id=123">Ссылка с параметром id</a></li>
-                    <li><a href="current-page.html">Относительная ссылка в текущем каталоге</a></li>
-                    <li><a href="about/page.html">Относительная ссылка в каталоге about</a></li>
-                    <li><a href="../page.html">Относительная ссылка уровнем выше</a></li>
-                    <li><a href="../../page.html">Относительная ссылка двумя уровнями выше</a></li>
-                    <li>Это <a href="/link">контекстная ссылка</a> в тексте абзаца</li>
-                    <li><a href="https://example.com/page#section">Ссылка на фрагмент стороннего сайта</a></li>
-                    <li>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo" usemap="#htmlmap" width="300">
-                    <map name="htmlmap">
-                        <area shape="rect" coords="0,0,150,300" href="https://ru.wikipedia.org/wiki/HTML5" alt="HTML5 информация" >
-                        <area shape="circle" coords="225,150,75" href="https://www.w3.org/TR/html52/" alt="HTML5 спецификация">
-                    </map>
-                    <div></div>
-                    Нажмите в правой части значка,чтобы перейти на сайт об HTML, в остальной области - чтобы перейти в Википедию
-                    </li>
-                    <li><a href="">Ссылка с пустым href</a></li>
-                    <li><a>Ссылка без href</a></li>
-                    <li><a href="/no-follow" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li>
-                    <li><a href="/no-index" rel="noindex">Ссылка, запрещенная для индексации</a></li>
-                    <li>
-                        <ol>
-                            <li><a href="/link1" title="Подпись к первой ссылке">Ссылка 1</a></li>
-                            <li><a href="/link2" title="Подпись ко второй ссылке">Ссылка 2</a></li>
-                            <li><a href="/link3" title="Подпись к третьей ссылке">Ссылка 3</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на FTP файл</a></li>
-                </ul>
-            </section>
-
-            <section class="section">
-                <h2 id="fragment">Фрагмент страницы</h2>
-                <p>Это целевой фрагмент для ссылки №6</p>
-            </section>
-
-<section class="section">
+    <section class="section">
                 <h2>Таблица</h2>
                 <table class="data-table">
                     <thead>
@@ -133,6 +84,56 @@
                     </tbody>
                 </table>
             </section>
+
+    <main class="main">
+        <div class="container">
+            <section class="section">
+                <h2>Маркированный список гиперссылок</h2>
+                <ul class="links-list">
+                    <li><a href="http://kubsu.ru">Абсолютная ссылка на kubsu.ru</a></li>
+                    <li><a href="https://kubsu.ru">Абсолютная ссылка на kubsu.ru (https)</a></li>
+                    <li><a href="https://kubsu.ru"><img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png" width="200" height="200" alt="Ссылка-изображение"></a></li>
+                    <li><a href="/internal-page">Сокращенная ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                    <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+                    <li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
+                    <li><a href="/page?id=123">Ссылка с параметром id</a></li>
+                    <li><a href="current-page.html">Относительная ссылка в текущем каталоге</a></li>
+                    <li><a href="about/page.html">Относительная ссылка в каталоге about</a></li>
+                    <li><a href="../page.html">Относительная ссылка уровнем выше</a></li>
+                    <li><a href="../../page.html">Относительная ссылка двумя уровнями выше</a></li>
+                    <li>Это <a href="/link">контекстная ссылка</a> в тексте абзаца</li>
+                    <li><a href="https://example.com/page#section">Ссылка на фрагмент стороннего сайта</a></li>
+                    <li>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo" usemap="#htmlmap" width="300">
+                    <map name="htmlmap">
+                        <area shape="rect" coords="0,0,150,300" href="https://ru.wikipedia.org/wiki/HTML5" alt="HTML5 информация" >
+                        <area shape="circle" coords="225,150,75" href="https://www.w3.org/TR/html52/" alt="HTML5 спецификация">
+                    </map>
+                    <div></div>
+                    Нажмите в правой части значка,чтобы перейти на сайт об HTML, в остальной области - чтобы перейти в Википедию
+                    </li>
+                    <li><a href="">Ссылка с пустым href</a></li>
+                    <li><a>Ссылка без href</a></li>
+                    <li><a href="/no-follow" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li>
+                    <li><a href="/no-index" rel="noindex">Ссылка, запрещенная для индексации</a></li>
+                    <li>
+                        <ol>
+                            <li><a href="/link1" title="Подпись к первой ссылке">Ссылка 1</a></li>
+                            <li><a href="/link2" title="Подпись ко второй ссылке">Ссылка 2</a></li>
+                            <li><a href="/link3" title="Подпись к третьей ссылке">Ссылка 3</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на FTP файл</a></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2 id="fragment">Фрагмент страницы</h2>
+                <p>Это целевой фрагмент для ссылки №6</p>
+            </section>
+
+
 
 <section class="section">
                 <h2>Форма</h2>
@@ -210,4 +211,5 @@
         </div>
     </footer>
 </body>
+
 </html>
